@@ -1,0 +1,241 @@
+{
+  "timestamp": "2026-03-30T18:56:04.726809",
+  "cpu": {
+    "usage_percent": 50.0,
+    "cores_physical": 2,
+    "cores_logical": 2,
+    "freq_current": 2499.998,
+    "freq_max": 0.0,
+    "per_core_usage": [
+      100.0,
+      14.3
+    ],
+    "load_avg_1": 0.0,
+    "load_avg_5": 0.0,
+    "load_avg_15": 0.0,
+    "context_switches": 210774,
+    "interrupts": 119646
+  },
+  "memory": {
+    "total": 1109463040,
+    "available": 716111872,
+    "used": 317820928,
+    "percent": 35.5,
+    "swap_total": 0,
+    "swap_used": 0,
+    "swap_free": 0,
+    "swap_percent": 0.0
+  },
+  "disk": {
+    "partitions": [],
+    "io_read_bytes": 54272,
+    "io_write_bytes": 5644288,
+    "io_read_count": 14,
+    "io_write_count": 281,
+    "io_time": 50,
+    "total_space": 0,
+    "used_space": 0,
+    "free_space": 0,
+    "percent_used": 0
+  },
+  "network": {
+    "bytes_sent": 585027,
+    "bytes_recv": 526055,
+    "packets_sent": 1813,
+    "packets_recv": 1787,
+    "errin": 0,
+    "errout": 0,
+    "dropin": 0,
+    "dropout": 0,
+    "connections": [
+      {
+        "family": "IPv4",
+        "type": "UDP",
+        "local_address": "127.0.0.1:323",
+        "remote_address": "",
+        "status": "NONE"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "21.0.9.76:35123",
+        "remote_address": "21.0.0.1:48598",
+        "status": "ESTABLISHED"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "0.0.0.0:35123",
+        "remote_address": "",
+        "status": "LISTEN"
+      },
+      {
+        "family": "IPv6",
+        "type": "UDP",
+        "local_address": "::1:323",
+        "remote_address": "",
+        "status": "NONE"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "21.0.9.76:19005",
+        "remote_address": "21.0.0.1:52148",
+        "status": "ESTABLISHED"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "0.0.0.0:19005",
+        "remote_address": "",
+        "status": "LISTEN"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "0.0.0.0:19006",
+        "remote_address": "",
+        "status": "LISTEN"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "127.0.0.1:19001",
+        "remote_address": "",
+        "status": "LISTEN"
+      },
+      {
+        "family": "IPv4",
+        "type": "TCP",
+        "local_address": "127.0.0.1:36142",
+        "remote_address": "",
+        "status": "LISTEN"
+      }
+    ],
+    "hostname": "c-69cac4be-014dd6ef-3f734efa1606",
+    "ip_address": "21.0.9.76"
+  },
+  "processes": {
+    "total_processes": 7,
+    "running_processes": 0,
+    "top_cpu_processes": [
+      {
+        "pid": 1,
+        "name": "sudo",
+        "cpu_percent": 0,
+        "memory_percent": 0.3370682812471157
+      },
+      {
+        "pid": 2,
+        "name": "sudo",
+        "cpu_percent": 0,
+        "memory_percent": 0.03544200985730899
+      },
+      {
+        "pid": 3,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 29.849556051907776
+      },
+      {
+        "pid": 28,
+        "name": "tmux: server",
+        "cpu_percent": 0,
+        "memory_percent": 0.5072637660827349
+      },
+      {
+        "pid": 37,
+        "name": "bash",
+        "cpu_percent": 0,
+        "memory_percent": 0.34076015727391873
+      },
+      {
+        "pid": 745,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 1.2622524135639526
+      },
+      {
+        "pid": 747,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 1.5114540453731564
+      }
+    ],
+    "top_memory_processes": [
+      {
+        "pid": 3,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 29.849556051907776
+      },
+      {
+        "pid": 747,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 1.5114540453731564
+      },
+      {
+        "pid": 745,
+        "name": "python",
+        "cpu_percent": 0,
+        "memory_percent": 1.2622524135639526
+      },
+      {
+        "pid": 28,
+        "name": "tmux: server",
+        "cpu_percent": 0,
+        "memory_percent": 0.5072637660827349
+      },
+      {
+        "pid": 37,
+        "name": "bash",
+        "cpu_percent": 0,
+        "memory_percent": 0.34076015727391873
+      },
+      {
+        "pid": 1,
+        "name": "sudo",
+        "cpu_percent": 0,
+        "memory_percent": 0.3370682812471157
+      },
+      {
+        "pid": 2,
+        "name": "sudo",
+        "cpu_percent": 0,
+        "memory_percent": 0.03544200985730899
+      }
+    ]
+  },
+  "system": {
+    "system": "Linux",
+    "node": "c-69cac4be-014dd6ef-3f734efa1606",
+    "release": "4.19.91-c8dfc93.al7.x86_64",
+    "version": "#1 SMP Tue Sep 26 10:25:51 UTC 2023",
+    "machine": "x86_64",
+    "processor": "unknown",
+    "boot_time": "2026-03-30T18:45:13",
+    "uptime_seconds": 651.7433049678802,
+    "python_version": "3.12.10"
+  },
+  "gpu": {
+    "available": false,
+    "gpu_name": "",
+    "gpu_load": 0.0,
+    "gpu_memory_total": 0,
+    "gpu_memory_used": 0,
+    "gpu_memory_percent": 0.0,
+    "gpu_temperature": 0.0
+  },
+  "battery": {
+    "available": false,
+    "plugged_in": false,
+    "percent": 0.0,
+    "secsleft": 0,
+    "time_left": ""
+  },
+  "temperature": {
+    "available": false,
+    "sensors": {}
+  }
+}
