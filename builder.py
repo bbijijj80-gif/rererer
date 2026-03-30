@@ -119,6 +119,7 @@ def verify_files():
     required_files = {
         'core.py': 'Ядро мониторинга системы',
         'gui.py': 'Графический интерфейс',
+        'app.py': 'Главное приложение (точка входа)',
         'builder.py': 'Сборщик EXE (этот файл)'
     }
     
@@ -167,6 +168,21 @@ def verify_files():
                     all_exist = False
         except Exception as e:
             print_error(f"Ошибка чтения gui.py: {e}")
+            all_exist = False
+    
+    # Проверка содержимого app.py
+    if Path('app.py').exists():
+        try:
+            with open('app.py', 'r', encoding='utf-8') as f:
+                content = f.read()
+                if 'SystemMonitorCore' not in content or 'SystemMonitorGUI' not in content:
+                    print_error("app.py не импортирует необходимые модули!")
+                    all_exist = False
+                if 'main()' not in content:
+                    print_error("app.py не содержит функцию main()!")
+                    all_exist = False
+        except Exception as e:
+            print_error(f"Ошибка чтения app.py: {e}")
             all_exist = False
     
     return all_exist
@@ -333,6 +349,22 @@ def build_exe(console_mode=False):
         print_error("PyInstaller не найден!")
         return False
     
+    # Проверка наличия всех необходимых файлов
+    print_info("Проверка файлов проекта...")
+    required_files = ['app.py', 'core.py', 'gui.py']
+    missing_files = []
+    
+    for filename in required_files:
+        if not Path(filename).exists():
+            missing_files.append(filename)
+    
+    if missing_files:
+        print_error(f"Отсутствуют файлы: {', '.join(missing_files)}")
+        print_error("Убедитесь, что вы запускаете сборщик из корневой папки проекта")
+        return False
+    
+    print_success("Все файлы найдены")
+    
     # Подготовка команды
     spec_name = 'SystemMonitor'
     
@@ -354,7 +386,7 @@ def build_exe(console_mode=False):
         '--icon', 'NONE',
         '--clean',
         '--noconfirm',
-        'gui.py'
+        'app.py'
     ]
     
     print_info("Команда сборки:")
