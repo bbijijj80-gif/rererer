@@ -1,0 +1,45 @@
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.out
+build/
+dist/
+*.so
+*.dll
+*.exe
+
+# Dependencies
+.venv/
+venv/
+.env
+.env.local
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Python specific
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+
+# System files
+.DS_Store
+Thumbs.db
+.trash/
+.cache/
